@@ -2,6 +2,13 @@
 
 ## Repository, archive and citation
 
+**Archival status:** the Zenodo DOI below is reserved, but the archival record
+is not yet published because checkpoint-volume transfers remain incomplete.
+The source and manuscript are publicly available in GitHub release `v1.0.1`;
+Zenodo checkpoint downloads are not yet available. The release checksum files
+describe the immutable `v1.0.1` tag and its source ZIP, not this subsequent
+status note on the default branch.
+
 Study repository: [PeterPonyu/attention-topic-collapse](https://github.com/PeterPonyu/attention-topic-collapse). Versioned archive: [10.5281/zenodo.22914481](https://doi.org/10.5281/zenodo.22914481). Use `CITATION.cff` for release 1.0.1; `release-manifest.json` records distributed-file checksums. The archive and source repository describe this study only.
 
 Author-owned software is MIT licensed. The author's manuscript, figures, generated results and model weights are CC BY 4.0. Source-study data, labels, annotations and other third-party materials retain their original terms; they are not relicensed. Read `LICENSE` and `NOTICE.md` before reusing mixed-content files.
