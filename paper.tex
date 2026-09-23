@@ -1,0 +1,205 @@
+\documentclass[11pt]{article}
+\input{standalone-assets/preamble}
+\graphicspath{{figures/}{standalone-assets/}{tikz/}{./}}
+\hypersetup{pdftitle={Single-topic collapse in a within-cell attention topic model: an implementation and measurement case study},pdfauthor={Zeyu Fu}}
+
+\title{\textbf{Single-topic collapse in a within-cell attention topic model:\\ an implementation and measurement case study}}
+\author[1]{Zeyu Fu}
+\affil[1]{State Key Laboratory of Trauma and Chemical Poisoning, Institute of Combined Injury,
+Chongqing Engineering Research Center for Nanomedicine, College of Preventive Medicine,
+Army Medical University, Chongqing, China\\
+\texttt{fuzeyu09@gmail.com}}
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+A topic allocation can lose almost all between-cell variation while remaining a valid probability vector. We examine this distinction in a small, non-flow-matching topic autoencoder whose attention layers operate over eight projected tokens within each cell. In archived Setty runs at concentration $\alpha=0.1$, all 450 held-out cells select the same dominant topic within each run, for three seeds at each of the 200-, 400-, and 1000-epoch caps. The dominant topic differs across seeds. Allocation perplexity is approximately one, while the exact zero printed by the legacy coherence scorer is a degeneracy sentinel, not a measured biological effect. The 1000-cap runs stop at 607, 492 and 536 epochs. Other backgrounds do not show uniform degeneracy. We distinguish this representation failure from graph reachability and prediction of computational Palantir branch probabilities, and withhold branch scores for degenerate allocations. A new twelve-arm, initialization- and schedule-matched concentration experiment completes 3200 updates per arm: low-concentration Setty collapse recurs on two of three seeds (exact 95\% binomial interval 0.094--0.992); the other seed and all Dentate runs fail strict collapse. Token and batch-context interventions check the implementation, not the scientific cause of collapse. The evidence identifies a configuration-specific failure; attention attribution requires an unrun parameter-matched MLP control and substantially more seeds.
+\end{abstract}
+
+\noindent\textbf{Scope of inference.} The matched low-concentration Setty strict-collapse frequency is $2/3$, with an exact seed-level 95\% binomial interval of 0.094--0.992. The token and batch-context probes are implementation checks; they cannot attribute collapse to attention. A parameter-matched MLP gate and a larger-seed phase diagram remain prospective.
+
+\input{introduction}
+\section{Materials and Methods}
+Figure~\ref{fig:arch} locates the within-cell attention tensor, native allocation and interventions before specifying their objective. The architecture identifies the measured pathway without attributing collapse to attention alone.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\textwidth]{figures/architecture.pdf}
+\caption{\textbf{Within-cell attention, allocation and intervention routes.} A: eight independent full-expression projections produce $[B,8,128]$ tokens; two four-head attention layers and learned-query pooling parameterize ten logit means and variances. B: sampled logits give a simplex and topic--gene reconstruction; the concentration-dependent KL has weight 0.01 and a custom $50\max(0,0.1-\bar d_k)$ shortfall term (Eq.~\ref{eq:topic-objective}). Evaluation uses $\operatorname{softmax}(\mu)$. C: token and batch-context probes act on restored endpoints. Shapes denote computational objects. Tokens are not named genes, attention is within-cell, and the Gaussian comparator changes multiple model factors.}
+\label{fig:arch}
+\end{figure}
+\subsection{Within-cell attention and the optimized objective}
+A normalized expression vector with $G=3000$ features is mapped through eight separate Linear--LayerNorm--GELU projections to width 128, then added to learned token embeddings. Two transformer layers, each with four 32-dimensional heads and feedforward width 256, act on $[B,8,128]$. A learned query pools the tokens by cross-attention, followed by LayerNorm and two $128\to10$ output heads. This query pooling is related to the permutation-invariant construction of Set Transformer~\cite{lee2019set}; it does not make the input genes exchangeable. Dropout is zero. The posterior in logit coordinates is $q(\eta\mid x)=\mathcal N(\mu(x),\operatorname{diag}v(x))$, with $v=\operatorname{softplus}(h_v)+10^{-4}$. One reparameterized draw per cell and update~\cite{kingma2014auto} gives $\eta=\mu+\sqrt v\odot\epsilon$, $\epsilon\sim\mathcal N(0,I)$, and $\theta=\operatorname{softmax}(\eta)$. Evaluation exports $\operatorname{softmax}(\mu)$, not a Monte Carlo posterior average.
+
+For trainable topic--gene logits $b\in\mathbb R^{10\times G}$, $\beta_{kg}=\operatorname{softmax}(b_{k\cdot})_g$ and $p_{ig}\simeq\sum_k\theta_{ik}\beta_{kg}$. The shipped ``multinomial'' reconstruction actually uses cell-normalized counts $\tilde x_{ig}=x_{ig}/(\sum_gx_{ig}+\varepsilon)$:
+\begin{equation}
+ \mathcal L_{\rm rec}=-\frac1B\sum_{i=1}^B\sum_{g=1}^G
+ \tilde x_{ig}\log(p_{ig}+\varepsilon),\qquad \varepsilon=10^{-10}.
+\end{equation}
+The decoder adds $\varepsilon$ inside $\log\theta$ and bounds reconstructed probabilities to $[\varepsilon,1-\varepsilon]$ before this loss. Thus the reconstruction is cross-entropy in nats per normalized cell, rather than a total-count-weighted multinomial log likelihood.
+
+For concentration vector $\alpha$, the implemented diagonal logit-space prior has
+\begin{equation}
+ m_k=\psi(\alpha_k)-\frac1K\sum_j\psi(\alpha_j),\qquad
+ s_k^2=\max\left\{10^{-6},\psi_1(\alpha_k)-\frac1{K^2}\sum_j\psi_1(\alpha_j)\right\}.
+\end{equation}
+Here $K=10$; under the symmetric concentrations tested, $m_k=0$ and $s_k^2=(1-1/K)\psi_1(\alpha)$. This is the code's diagonal surrogate, not an exact Dirichlet posterior or full centered-log-ratio covariance. With $\bar d_k=B^{-1}\sum_i d_{ik}$,
+\begin{align}
+ d_{ik}&=\frac12\left[\frac{v_{ik}+(\mu_{ik}-m_k)^2}{s_k^2+\varepsilon}-1
+       +\log(s_k^2+\varepsilon)-\log(v_{ik}+\varepsilon)\right],\\
+ \mathcal L&=\mathcal L_{\rm rec}+0.01\sum_{k=1}^{10}
+       \left[\bar d_k+50\max(0,0.1-\bar d_k)\right].\label{eq:topic-objective}
+\end{align}
+The code calls this term ``free bits'', but conventional free bits uses a flat KL allowance~\cite{kingma2016iaf}. Here the batch-averaged per-coordinate shortfall is penalized linearly: away from the kink, its derivative with respect to $\bar d_k$ is $-49$ below 0.1 and $1$ above 0.1, before the 0.01 weight. It therefore pushes low KL upward rather than merely switching its penalty off. At $\alpha=1$ this regularizer remains active. Word-prior buffers do not enter the loss; there is no flow-matching stage.
+
+
+
+\subsection{Backgrounds, split and optimization}
+The backgrounds are Setty hematopoiesis~\cite{setty2019palantir}, dentate gyrus~\cite{hochgerner2018conserved}, pancreatic endocrinogenesis (Endo)~\cite{bastidas2019endocrinogenesis}, and human lung GSE130148~\cite{vieirabraga2019lung}. The lung accession contains fresh resected tissue from four patients, sampled from tumor-uninvolved regions; it is not a lung-development dataset despite the local filename. Historical preprocessing selects up to 3000 cells and 3000 genes before the split. Setty, dentate and lung use 2100/450/450 train/unused-validation/test cells; Endo uses 1771/379/381. These are within-file cell splits, not external cohorts or independent donors. Historical training uses physical batch size 128, AdamW learning rate and weight decay $10^{-3}$, gradient clipping at 10, and a training-loss patience of fifty epochs; caps are not necessarily completed epochs. A training seed is not a donor.
+
+The 200-cap grid has 60 topic dose runs and 12 controls. It varies five concentrations across four backgrounds and three training seeds at $K=10$. Additional locks contain a Setty 400-cap comparison, a dedicated $\alpha=0.1$ 400-cap check, and 48 transformer runs at cap 1000.
+
+AdamW uses decoupled weight decay~\cite{loshchilov2019decoupled}. Global parameter-gradient norm clipping at 10~\cite{pascanu2013difficulty} follows backpropagation and differs from the coordinate-KL transformation in Eq.~\ref{eq:topic-objective}. There is no AMP, accumulation or scheduler. The validation subset is unused and the endpoint is the final state, not a restored best checkpoint. We distinguish the cap from actual completed epochs and do not treat reused endpoints as new replications.
+
+\subsection{Readouts and version boundaries}
+The geometry reference is PCA-50 fitted to the held-out expression matrix in the historical audit. RAAG therefore measures alignment to a transductive expression reference. Palantir branch probabilities~\cite{setty2019palantir} are existing computed annotations in the same Setty object; five-fold $k$NN regression and distance correlation assess agreement with that proxy, not experimentally observed fates.
+
+For native simplex rows, allocation coherence compares edge Jensen--Shannon divergence with a baseline over distinct cell pairs. The archived estimator samples this baseline; when it is at most $10^{-12}$, the legacy implementation returns zero and a degeneracy flag. A ratio is not interpretable under this condition. The revision displays exact distinct-pair coherence on archived native arrays and marks degenerate ratios n.q. in tables and plots. The old sampled estimates and zero sentinels remain in the immutable archives and explicit version mapping, rather than being silently relabeled.
+
+UMAP~\cite{mcinnes2018umap} is an independent two-dimensional projection for each seed. The corrected purity calculation keeps every coordinate unchanged and recomputes label purity using the first 15 non-self neighbors. The old code had skipped the nearest neighbor after an API call that already excluded self; old purity values are superseded, not renamed.
+
+\input{enhancement_methods}
+\section{Results}
+\subsection{Concentration is not information retention}
+Figure~\ref{fig:dose} and Table~\ref{tab:alpha} distinguish the concentration axis from coherence. Increasing $\alpha$ generally spreads allocations over more topics, but no common monotone biological benefit follows. Unreliable or degenerate branch readouts are omitted in Figure~\ref{fig:branch}; their absence must not be read as a zero prediction score.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{figures/topic-transformer_dose.pdf}
+\caption{\textbf{Historical concentration grid at the 200-epoch cap, $K=10$.} A: exact-pair native-allocation coherence. B: mean row perplexity (effective topic count). Concentration is logarithmic; the dashed line marks $\alpha=1$. Color and shape identify backgrounds in the shared key. Points and bars are three-seed means and sample SD within fixed public-file splits; lines connect tested doses. Archived latents are unchanged. Unreliable ratios are omitted and marked n.q. in Table~\ref{tab:alpha}; they are not zeros. Seeds do not estimate donor uncertainty.}
+\label{fig:dose}
+\end{figure}
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Historical 200-cap allocation and Setty branch readouts.} Mean and seed SD are descriptive. n.q. denotes a readout rejected by the reliability rule. Setty $\alpha=0.1$ is degenerate; its coherence and branch scores are withheld rather than displaying the legacy zero sentinel. Perplexity near one indicates single-topic concentration, not an empty simplex.}
+\label{tab:alpha}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\input{standalone-assets/topic-transformer_alpha}
+\end{table}
+
+\subsection{Setty has a near-constant single-topic allocation}
+Nine native latent archives at $\alpha=0.1$ were inspected directly. Each is $450\times10$; all 450 rows have the same argmax within each run. Seeds 0, 1 and 2 select topic indices 2, 3 and 1, respectively. Row sums remain approximately one, with tiny nonzero tails. The largest within-coordinate spread across cells is on the order of $10^{-13}$--$10^{-11}$. Thus the simplex is not empty, nor are different seeds literally the same vector. The appropriate description is near-constant single-topic collapse.
+
+Figure~\ref{fig:collapse} combines concentration and degeneracy status across budgets. Table~\ref{tab:alpha0p1400} shows that all three low-dose topic runs remain degenerate after completing 400 epochs. At the 1000 cap the same status occurs after early stopping at 607, 492 and 536 epochs (Table~\ref{tab:shipped1000}). These observations disfavor a failure restricted to the original 200-cap endpoint. They do not identify a unique optimization mechanism.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{figures/collapse_alpha.pdf}
+\caption{\textbf{Historical concentration and degeneracy across budgets.} Rows A/B show exact-pair coherence/mean perplexity; columns identify backgrounds. Logarithmic $\alpha=0.1,0.5,1,5$ has small budget offsets; $\alpha=2$ is excluded. The inter-row key identifies cap by color and seeds 0--2 by shape. Points are individual endpoints without error bars. The dedicated Setty 400-cap check contributes only $\alpha=0.1$ perplexity. Shading marks three degenerate Setty seeds at each cap, not zero coherence. Caps include early stopping; missing combinations are not a factorial time course.}
+\label{fig:collapse}
+\end{figure}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{figures/topic-transformer_branch.pdf}
+\caption{\textbf{Historical Setty branch-proxy response, $K=10$, 200-epoch cap.} Five-fold $k$NN $R^2$ predicts stored Palantir branch probabilities against logarithmic concentration. Points/bars are three-seed means/sample SD; the dashed line marks $\alpha=1$. The horizontal key identifies Setty and capacity. Degenerate $\alpha=0.1$ and unreliable summaries are withheld, not assigned zero. Agreement on the fixed within-file split concerns a computed annotation, not observed fate or an attention-specific effect.}
+\label{fig:branch}
+\end{figure}
+
+\subsection{The failure is not uniform across backgrounds}
+At the 1000 cap, Endo $\alpha=0.1$ is degenerate only on seed 0, while the dentate and lung runs remain live. Setty-specific status cannot be generalized to all tissues or all attention encoders. The figure uses only doses shared or explicitly present across the relevant locks, so it is not a complete factorial time course.
+
+\subsection{Two-dimensional purity and Gaussian comparison}
+For stored 200-cap Setty coordinates, Corrected purity is $0.355\pm0.021$ at $\alpha=0.1$ and $0.381\pm0.042$ at $\alpha=1$. A visually organized projection or similar label purity does not validate the nearly constant native allocation. Figure~\ref{fig:umap400} and Table~\ref{tab:umappurity400} instead show the $\alpha=1$ 400-cap comparison: topic purity is $0.499\pm0.056$ and control purity is $0.809\pm0.016$. These are stored-label statistics on independent UMAP fits, not evidence that the control recovered a biological lineage.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{figures/topic-transformer_setty_umap_400.pdf}
+\caption{\textbf{Stored Setty projections at the 400-epoch cap.} Row A: Topic, $\alpha=1$, $K=10$; row B: Gaussian comparator. Columns show seeds 0--2, each retaining 450 held-out cells. The inter-row key preserves ten label codes and common colors. Each UMAP fit is independent, dimensionless and equal-aspect within its tile. Corrected first-15-nonself-neighbor purity changes no coordinates. No cells or seeds are averaged. The comparator differs in geometry, likelihood and decoder; projection shape does not establish lineage recovery.}
+\label{fig:umap400}
+\end{figure}
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Corrected 400-cap UMAP label purity.} All entries use the first 15 non-self neighbors in the fixed two-dimensional coordinates (version umap-knn15-nonself-v2). This is a label-neighborhood diagnostic, not lineage recovery or a native-latent allocation score.}
+\label{tab:umappurity400}
+\small
+\input{standalone-assets/topic-transformer_umap_400_purity}
+\end{table}
+
+The Gaussian control has different latent geometry, likelihood, decoder and parameter count. Table~\ref{tab:control} reports its historical readouts, but shared seeds and caps do not isolate the prior or attention. At shipped $\alpha=1$, Setty Palantir $k$NN $R^2$ is $0.345\pm0.130$ at 200 epochs and has mean 0.413 at 400, with seed variation. The control has higher scores in these archived comparisons and on each seed at cap 1000. Such ordering is local to the implementation, split and proxy.
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Historical Gaussian-control and topic readouts.} Seeds and cap are aligned but likelihood, decoder, parameter count and latent geometry differ. This is not an attention-only or prior-only ablation. Reachability is shown for context; Palantir scores are computational branch-prediction readouts.}
+\label{tab:control}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llcccc}
+\toprule
+Quantity & Arm & seed 0 & seed 1 & seed 2 & mean \\
+\midrule
+\multirow{2}{*}{Setty Palantir $k$NN $R^2$}
+ & $\alpha=1$ & 0.202 & 0.377 & 0.455 & 0.345 \\
+ & control & 0.476 & 0.814 & 0.692 & 0.661 \\
+\midrule
+\multirow{2}{*}{Separation survival}
+ & $\alpha=1$ & 0.707 & 0.712 & 0.724 & 0.714 \\
+ & control & 0.941 & 0.909 & 0.873 & 0.907 \\
+\midrule
+\multirow{2}{*}{Reachability survival}
+ & $\alpha=1$ & 0.841 & 0.838 & 0.838 & 0.839 \\
+ & control & 1.000 & 1.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[htbp]
+\centering
+\caption{\textbf{400-epoch Setty low-concentration check.} Three topic runs and three Gaussian controls complete 400 epochs. Degenerate topic allocations retain perplexity near one; coherence and branch scores are n.q. because the ratio is degenerate. The control has no native topic allocation.}
+\label{tab:alpha0p1400}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\input{standalone-assets/topic-transformer-400-alpha0p1_setty}
+\end{table}
+\begin{table}[htbp]
+\centering
+\caption{\textbf{Setty rows from the historical 1000-cap transformer subset.} The model-specific archive contains 48 runs across four backgrounds. An asterisk marks early stopping; actual completed epochs are printed per seed. Dashes mark non-native Gaussian allocations. Degenerate coherence and branch readouts are n.q.; the old zero sentinels remain only in immutable archives.}
+\label{tab:shipped1000}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\input{standalone-assets/topic-transformer-1000_setty}
+\end{table}
+
+\subsection{A repeated graph fraction does not identify a component}
+Figure~\ref{fig:tear} shows reachability survival across doses and budgets. The fraction near 0.837664 recurs in several Setty runs, while cap-1000 $\alpha=1$ reachability is 1, 1 and approximately 0.838. The Gaussian control can also tear. Equality of a scalar fraction is insufficient to conclude that the identical edges or component were lost; that requires identity-level graph comparison. Allocation collapse and reachability are distinct diagnostics and need not be ordered together.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.92\textwidth,height=0.72\textheight,keepaspectratio]{figures/tear_vs_alpha.pdf}
+\caption{\textbf{Setty reachability across historical caps.} The score is the retained fraction of reference-connected cell pairs. Logarithmic concentration has a separate Gaussian-control category and cap-specific offsets. The shared key maps color/shape to seed and size to cap (200, 400, 1000). Each point is an endpoint, without aggregation or error bars. The dashed reference is 0.837664; the annotated 200-cap $\alpha=1$ seed-0 value is 0.841336. Repeated fractions do not identify the same severed component. Near-degenerate graph geometry retains the tie and rounding limitations in Methods.}
+\label{fig:tear}
+\end{figure}
+
+
+
+\input{enhancement_results}
+\input{discussion}
+\FloatBarrier
+\section{Declarations}
+\noindent\textbf{Data and code availability}\par\nobreak
+The study-specific source repository is \url{https://github.com/PeterPonyu/attention-topic-collapse}; the versioned research archive is \url{https://doi.org/10.5281/zenodo.22914481}. The archive contains the manuscript, vector figures, matched training and intervention records, saved allocation arrays, schedules, protocols and source snapshots. CPU commands reproduce collapse intervals and saved-result numerical diagnostics without training, source-expression snapshots or model checkpoints. Model checkpoints are supplied separately within this archive. Processed Setty and Dentate source-expression snapshots are not distributed because their exact upstream-version and annotation-transformation provenance has not been established for redistribution. Historical model-state probes and training additionally require separately and lawfully obtained, hash-matching expression inputs. Raw-data preprocessing, every historical training sweep and graph-score regeneration are outside the verified public reproduction scope. The repository README gives the dependency requirements, commands and checksums. Source studies and their data-access conditions are identified in Materials and Methods and the bibliography. Author-owned software is MIT licensed; the author's manuscript, figures, generated results and weights are CC BY 4.0. Third-party data and annotations retain their original terms.
+
+\noindent\textbf{Ethics approval and consent}\par\nobreak
+
+This study reuses the public expression datasets identified in Materials and Methods. The manuscript reports computational analyses of existing data. Author confirmation of any ethics review or exemption applicable to this secondary analysis, the original consent conditions, and consent for publication has not been established in this report. No new approval or exemption is asserted here.
+
+\noindent\textbf{Funding}\par\nobreak
+
+This research received no funding.
+
+\noindent\textbf{Author contributions}\par\nobreak
+
+Zeyu Fu is the sole author and is responsible for this manuscript.
+
+\noindent\textbf{Competing interests}\par\nobreak
+The author declares no competing interests.
+
+\bibliographystyle{plainnat}
+\bibliography{standalone-assets/refs,extra}
+\end{document}

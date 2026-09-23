@@ -1,0 +1,66 @@
+[
+  {
+    "source": "historical_sweeps/topic-transformer-prior-20260907/sweep_scores.json",
+    "local": "scripts/inputs/topic-transformer-prior-20260907.json",
+    "sha256": "118577930fd02717f12fc3bbc27a9a21e934c4017961110c418a294132331525",
+    "rows": 72,
+    "overlay": "RAAG-v2-exact-20260921; original archive preserved unchanged"
+  },
+  {
+    "source": "historical_sweeps/topic-transformer-alpha0p1-400ep-setty-20260908/sweep_scores.json",
+    "local": "scripts/inputs/topic-transformer-alpha0p1-400ep-setty-20260908.json",
+    "sha256": "a9bbc6999d7195ab0b3da84899161c315f286d1de6cfe6270d1208cf8ad6c8a9",
+    "rows": 6,
+    "overlay": "RAAG-v2-exact-20260921; original archive preserved unchanged"
+  },
+  {
+    "source": "historical_sweeps/topic-variants-400ep-setty-20260907/sweep_scores.json",
+    "local": "scripts/inputs/topic-variants-400ep-setty-20260907.json",
+    "sha256": "9d7c45a2ceb43f659cd83bdb021eb03a8c151b3f98b428afc00aa4afb97155b9",
+    "rows": 6,
+    "overlay": "RAAG-v2-exact-20260921; original archive preserved unchanged"
+  },
+  {
+    "source": "historical_sweeps/topic-variants-alpha-1000ep-fourbg-20260908/sweep_scores.json",
+    "local": "scripts/inputs/topic-variants-alpha-1000ep-fourbg-20260908.json",
+    "sha256": "252da7e27ca1d5475a813ce5e4ace510c247835c921e81970061f7a33bf43297",
+    "rows": 48,
+    "overlay": "RAAG-v2-exact-20260921; original archive preserved unchanged"
+  },
+  {
+    "source": "historical_coordinates/umap400/topic-transformer_400ep_alpha1_s0.csv",
+    "local": "scripts/inputs/umap400/topic-transformer_400ep_alpha1_s0.csv",
+    "sha256": "baeeb62ab869cab846f7ee7c61e16ce794fc6a49df552b4212edcea6128161e3",
+    "rows": 450
+  },
+  {
+    "source": "historical_coordinates/umap400/topic-transformer_400ep_alpha1_s1.csv",
+    "local": "scripts/inputs/umap400/topic-transformer_400ep_alpha1_s1.csv",
+    "sha256": "7ec76832cc086b990c691fd721e87653d19bf309066dcbad7c1f7e05335b32de",
+    "rows": 450
+  },
+  {
+    "source": "historical_coordinates/umap400/topic-transformer_400ep_alpha1_s2.csv",
+    "local": "scripts/inputs/umap400/topic-transformer_400ep_alpha1_s2.csv",
+    "sha256": "edbe4e68df36f4a44e351c9f472b247eb3d380cd33fd057040e00d02453aca95",
+    "rows": 450
+  },
+  {
+    "source": "historical_coordinates/umap400/topic-transformer_400ep_control_s0.csv",
+    "local": "scripts/inputs/umap400/topic-transformer_400ep_control_s0.csv",
+    "sha256": "e0f5a55a585a40c10c26416f141427ff9febe71418ec94912e0c83e6a2650e3f",
+    "rows": 450
+  },
+  {
+    "source": "historical_coordinates/umap400/topic-transformer_400ep_control_s1.csv",
+    "local": "scripts/inputs/umap400/topic-transformer_400ep_control_s1.csv",
+    "sha256": "8bc93a4274e5ce2fa4ebff69f295ad39addc38612b0476657227b545ba2b9485",
+    "rows": 450
+  },
+  {
+    "source": "historical_coordinates/umap400/topic-transformer_400ep_control_s2.csv",
+    "local": "scripts/inputs/umap400/topic-transformer_400ep_control_s2.csv",
+    "sha256": "e4ecf44ed0a51735e8c222754e7ad729e2d1505437b2f6f70103080674cb957b",
+    "rows": 450
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "PROTOCOL.md": "7ecbe6bdad9b1e726eb48d8abf3f20879b4940c6967111b828bff9f7ae969c4a",
+  "inputs/setty.npz": "1efd62dcfb9241358b4a43050406df001d6af76b7c88ee3dfc7980357c302496",
+  "inputs/dentate.npz": "242b2104dad518a1950714dd1123d9dbdf0709461033547c7939e16597b9620f",
+  "source/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source/utils/base_model.py": "9d83b652aa83bc9f45e603e4aa53f325c6b71e2a26ea5230b1d1c9e963bb7fce",
+  "source/utils/mixins.py": "325ba792e09a44fd4789477520577548f99bf6de59e48a26d5f4cbe8d0528f29",
+  "source/models/shared_modules.py": "d330ed752619581631f83b8422be3d62560b07e5c983d641d83fb6b83c05d4d8",
+  "source/models/encoders.py": "56d24b04d08eb9b175cfb3417a2e9c7c2f11bce18392b794ae6ac88a019ffe7a",
+  "source/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source/models/topic_transformer.py": "d39fdd997212f2542bc1296c53fbc91ec8bc3bfb3519e3cc40f777122620453e"
+}

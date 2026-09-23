@@ -1,0 +1,1298 @@
+[
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.2906342661267445e-15,
+    "mean_l1": 1.7529380724745636e-15
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 4.889921800810271e-12,
+    "mean_l1": 1.9486497918747014e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 3.877675958108284e-12,
+    "mean_l1": 2.932738253635936e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 1.734723475976807e-15,
+    "mean_l1": 3.630342554350463e-15
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 9.992007221626409e-16,
+    "mean_l1": 1.4287616229013977e-15
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 4.890227112142043e-12,
+    "mean_l1": 1.9484787047718832e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 3.877675958108284e-12,
+    "mean_l1": 2.9330830299267863e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 1.2906342661267445e-15,
+    "mean_l1": 3.3631951390500348e-15
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.1920928955078125e-07,
+    "mean_l1": 3.752211341634393e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.20872712135314941,
+    "mean_l1": 0.02079084701836109
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.25659477710723877,
+    "mean_l1": 0.02790021523833275
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 1.1920928955078125e-07,
+    "mean_l1": 7.334165275096893e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.7881393432617188e-07,
+    "mean_l1": 3.724562702700496e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.20872712135314941,
+    "mean_l1": 0.02079082280397415
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.25659477710723877,
+    "mean_l1": 0.027900204062461853
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 2.980232238769531e-07,
+    "mean_l1": 1.0928488336503506e-07
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 4.579669976578771e-16,
+    "mean_l1": 2.5547530128726403e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 1.0408687800556038e-13,
+    "mean_l1": 1.2540001589206318e-13
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 3.2692598628258907e-13,
+    "mean_l1": 4.653450476517496e-13
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 7.771561172376096e-16,
+    "mean_l1": 7.099626875978204e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 3.122502256758253e-16,
+    "mean_l1": 2.360274248183053e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 1.0404524464213694e-13,
+    "mean_l1": 1.2544549817319894e-13
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 3.268427195557422e-13,
+    "mean_l1": 4.653416324149062e-13
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 7.7021722333370235e-16,
+    "mean_l1": 6.623391071713947e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.7881393432617188e-07,
+    "mean_l1": 5.026413418818265e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.04423946142196655,
+    "mean_l1": 0.005957481916993856
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.10596609115600586,
+    "mean_l1": 0.014715023338794708
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 5.364418029785156e-07,
+    "mean_l1": 1.4235411072149873e-07
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.1920928955078125e-07,
+    "mean_l1": 4.786306817550212e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.044239342212677,
+    "mean_l1": 0.005957482382655144
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.10596579313278198,
+    "mean_l1": 0.014715025201439857
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 2.980232238769531e-07,
+    "mean_l1": 8.377537596970797e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.255140518769849e-16,
+    "mean_l1": 2.351227936306377e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 1.219692749576673e-12,
+    "mean_l1": 2.2180881263655916e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 2.4110678731315005e-12,
+    "mean_l1": 2.4757485558163372e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 3.0531133177191805e-16,
+    "mean_l1": 6.306261936261937e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.42861286636753e-16,
+    "mean_l1": 2.450839010903483e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 1.2197760163035198e-12,
+    "mean_l1": 2.2180777180247357e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 2.411024505044601e-12,
+    "mean_l1": 2.4757075729742173e-12
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 3.0531133177191805e-16,
+    "mean_l1": 7.062492951570576e-16
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.1920928955078125e-07,
+    "mean_l1": 5.905894795432687e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.03701949119567871,
+    "mean_l1": 0.0073022074066102505
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.033441007137298584,
+    "mean_l1": 0.014356636442244053
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 5.960464477539062e-07,
+    "mean_l1": 2.1629966795444489e-07
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.7881393432617188e-07,
+    "mean_l1": 4.716275725513697e-08
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.03701922297477722,
+    "mean_l1": 0.007302209734916687
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.033441126346588135,
+    "mean_l1": 0.014356624335050583
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "setty",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 6.556510925292969e-07,
+    "mean_l1": 2.3326720111072063e-07
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 4.76837158203125e-07,
+    "mean_l1": 2.712477531474633e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.09281715750694275,
+    "mean_l1": 0.011744609102606773
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.1453976184129715,
+    "mean_l1": 0.011598464101552963
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 4.917383193969727e-07,
+    "mean_l1": 7.310883631816978e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 4.76837158203125e-07,
+    "mean_l1": 2.1653260517950912e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.09281671047210693,
+    "mean_l1": 0.011744589544832706
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.14539717137813568,
+    "mean_l1": 0.011598458513617516
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 3.5762786865234375e-07,
+    "mean_l1": 6.426128607017745e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.1920928955078125e-07,
+    "mean_l1": 5.1004462875425816e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.14894777536392212,
+    "mean_l1": 0.03712364286184311
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.1433635652065277,
+    "mean_l1": 0.04697579890489578
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 1.9371509552001953e-07,
+    "mean_l1": 1.338485162705183e-07
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 1.7881393432617188e-07,
+    "mean_l1": 5.581023287959397e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.14894747734069824,
+    "mean_l1": 0.037123650312423706
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.1433635801076889,
+    "mean_l1": 0.04697581008076668
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 0,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 2.8312206268310547e-07,
+    "mean_l1": 1.4404940884560347e-07
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.980232238769531e-07,
+    "mean_l1": 1.6647437206529503e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.44801318645477295,
+    "mean_l1": 0.019351370632648468
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.44801318645477295,
+    "mean_l1": 0.019348254427313805
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 9.834766387939453e-07,
+    "mean_l1": 1.2852254371864547e-07
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 4.76837158203125e-07,
+    "mean_l1": 1.7229488946668425e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.4480128884315491,
+    "mean_l1": 0.01935136877000332
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.4480128884315491,
+    "mean_l1": 0.019348254427313805
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 7.152557373046875e-07,
+    "mean_l1": 9.080397944671859e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.384185791015625e-07,
+    "mean_l1": 6.366099114529788e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.060782015323638916,
+    "mean_l1": 0.03370865061879158
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.09458738565444946,
+    "mean_l1": 0.04570096731185913
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 2.384185791015625e-07,
+    "mean_l1": 9.284121915698051e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.384185791015625e-07,
+    "mean_l1": 4.9243681132793427e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.060782045125961304,
+    "mean_l1": 0.033708665519952774
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.09458726644515991,
+    "mean_l1": 0.04570096731185913
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 1,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 1.7881393432617188e-07,
+    "mean_l1": 6.616755854338408e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 3.4416913763379853e-15,
+    "mean_l1": 2.0003530082357557e-15
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 1.0,
+    "mean_l1": 0.71875
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 1.0,
+    "mean_l1": 1.5625
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 1.354472090042691e-14,
+    "mean_l1": 7.342488162614957e-15
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 3.4416913763379853e-15,
+    "mean_l1": 1.3464571254825919e-15
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 1.0,
+    "mean_l1": 0.71875
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 1.0,
+    "mean_l1": 1.5625
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 0.1,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 1.354472090042691e-14,
+    "mean_l1": 7.7843005479028e-15
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.384185791015625e-07,
+    "mean_l1": 6.423942977562547e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "mean_tokens",
+    "max_abs": 0.11039674282073975,
+    "mean_l1": 0.034106384962797165
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "duplicate_first",
+    "max_abs": 0.11868947744369507,
+    "mean_l1": 0.043620072305202484
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "eval",
+    "intervention": "isolated",
+    "max_abs": 2.980232238769531e-07,
+    "mean_l1": 1.412699930369854e-07
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_tokens",
+    "max_abs": 2.384185791015625e-07,
+    "mean_l1": 6.780101102776825e-08
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "mean_tokens",
+    "max_abs": 0.11039680242538452,
+    "mean_l1": 0.034106384962797165
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "duplicate_first",
+    "max_abs": 0.11868941783905029,
+    "mean_l1": 0.04362007975578308
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "alter_companions",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "reverse_batch",
+    "max_abs": 0.0,
+    "mean_l1": 0.0
+  },
+  {
+    "dataset": "dentate",
+    "seed": 2,
+    "alpha": 1.0,
+    "mode": "train",
+    "intervention": "isolated",
+    "max_abs": 2.384185791015625e-07,
+    "mean_l1": 1.2955570127815008e-07
+  }
+]

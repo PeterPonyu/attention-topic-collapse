@@ -1,0 +1,846 @@
+{
+  "schema_version": 1,
+  "study": "attention-topic-collapse",
+  "version": "1.0.0",
+  "scope": "Distributed source/research files and separately downloadable model states. Excludes this manifest and SHA256SUMS to avoid self-reference.",
+  "files": {
+    ".gitignore": {
+      "sha256": "780dcd14eea2ce8ebaa0a53d3d0e8948b76899fad15ea3ffac7cd6ae5692a758",
+      "bytes": 241,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    ".zenodo.json": {
+      "sha256": "86fbb94eef7d59aa2351d97f6803bad32232be273cbe661d1fb2da50b7f3f06e",
+      "bytes": 1629,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "AUDIT.md": {
+      "sha256": "8de1da55eba97329168a80120a4a1f59dfb5dbaf73ec0af7b8d5c711a27d35b6",
+      "bytes": 1961,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "CITATION.cff": {
+      "sha256": "28a1d5adc6d1caa93b3ec694c72fc09b0d8dd2b53da73787becf234feb495d3b",
+      "bytes": 1553,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "LICENSE": {
+      "sha256": "d36a23d2cae0daf36fd1bfd3b15131c3816cd829d4ff7dc71379c75ef768a93f",
+      "bytes": 1123,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "LICENSE-CC-BY-4.0": {
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "bytes": 18657,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "LICENSE-MIT": {
+      "sha256": "10ef938551816fda8e6981789fd207e905524d51abd3023de441f7aac6dedfd1",
+      "bytes": 1064,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "NOTICE.md": {
+      "sha256": "5ec4dde5bcb2da78b2cb5e68b8fcd8d8b970c5ce102243779fdcb08dbf75f163",
+      "bytes": 1379,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "README.md": {
+      "sha256": "4c0e94a6ffcb5b72d2ce7ef517fc6c042a551ae34aa34e233819e22032278618",
+      "bytes": 8957,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "SOURCE_DATA.md": {
+      "sha256": "7a68b5ceecb9afbc13ced43aa122e004ead78164402790ce3142d69b630a0273",
+      "bytes": 2615,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "build.sh": {
+      "sha256": "9a8b02b2cb0ef85c26d6d82cb44eb81138f974951933bd5c88ecc7ef54d0cf50",
+      "bytes": 556,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "discussion.tex": {
+      "sha256": "29387b55f6aeb17ed145698c196c82f1c32a267980b60e2ee94595f9afa24ee4",
+      "bytes": 3857,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "enhancement_methods.tex": {
+      "sha256": "f9671bfc30787c71845d4ae64331085729ced09e17a5aebaabb8c08309025e69",
+      "bytes": 5702,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "enhancement_results.tex": {
+      "sha256": "b7deb12cbcf8107eeb677c54eab52d78b6b36c8d51b153d9e69f1c7bf32a549f",
+      "bytes": 5528,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/FUTURE_EXPERIMENT_FREEZE.md": {
+      "sha256": "89c0d0c1a1ed65749991ca9a5ddbf84d9b339318a3ecaf21b8057ad6afa69fe1",
+      "bytes": 5476,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/PROTOCOL.md": {
+      "sha256": "7ecbe6bdad9b1e726eb48d8abf3f20879b4940c6967111b828bff9f7ae969c4a",
+      "bytes": 1322,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/TRAINING_PROTOCOL.md": {
+      "sha256": "a2eaca53e0ce662b36dc59330723657b9a6c3a401ad6ece3ec068afa3d46b55f",
+      "bytes": 2308,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/collapse_ci.json": {
+      "sha256": "56e775347541c39ccad056424a14aa582bc6508c6d24fb3d623d25d1f388d2ba",
+      "bytes": 1237,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/collapse_ci.py": {
+      "sha256": "8a67f2fa0fe1191e1e3dd0d02919a2b34f35c3b276ba6a16a534368a5c8b11fc",
+      "bytes": 2262,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/historical_rows.csv": {
+      "sha256": "e4bec81f805cb66fd2909360f69ebe6304f321bf4bd25038d214937d72df3610",
+      "bytes": 14354,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/input_manifest.json": {
+      "sha256": "030ed558c3ce41af386c8fedf3c3f0318d74246faeafb2acc380b4840edbd2b4",
+      "bytes": 974,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/probe_results.json": {
+      "sha256": "14afe0215749206ae28271f033422f6b09709291ed563b5397fa6a27cb32f011",
+      "bytes": 26785,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/PROTOCOL.md": {
+      "sha256": "7ecbe6bdad9b1e726eb48d8abf3f20879b4940c6967111b828bff9f7ae969c4a",
+      "bytes": 1322,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/TRAINING_PROTOCOL.md": {
+      "sha256": "a2eaca53e0ce662b36dc59330723657b9a6c3a401ad6ece3ec068afa3d46b55f",
+      "bytes": 2308,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/input_manifest.json": {
+      "sha256": "030ed558c3ce41af386c8fedf3c3f0318d74246faeafb2acc380b4840edbd2b4",
+      "bytes": 974,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probe_results.json": {
+      "sha256": "14afe0215749206ae28271f033422f6b09709291ed563b5397fa6a27cb32f011",
+      "bytes": 26785,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s0_a0.1_eval.npz": {
+      "sha256": "9749231153673a173880a2ab545cc7d91370ae63b929ac937932eca185974a4e",
+      "bytes": 12104,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s0_a0.1_train.npz": {
+      "sha256": "a52e5d64240efcb6375e3498a0d763ad0457e01a031dd51abb573b4986cb1b7b",
+      "bytes": 12104,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s0_a1_eval.npz": {
+      "sha256": "e87aabc31a8a7fce74259fce1793ea562d5111785639eb79a59151c0ae812945",
+      "bytes": 12651,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s0_a1_train.npz": {
+      "sha256": "ff35416d897d49f0efe72ce20046265dbcac95f5f6575cb7ae3401cbea15d3be",
+      "bytes": 12662,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s1_a0.1_eval.npz": {
+      "sha256": "fc5edebbf8f6af6f792a51767d27b59f96891a1f2d5b01d43989dfd6e3141d55",
+      "bytes": 12061,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s1_a0.1_train.npz": {
+      "sha256": "b2cf7132baf5c02e288719c4b731597deebba919037e1471190039ab5593d04d",
+      "bytes": 12061,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s1_a1_eval.npz": {
+      "sha256": "466ee6d2cca02560eeb230373d4638af56d544d1a413d073b63ae86a164f8a99",
+      "bytes": 12722,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s1_a1_train.npz": {
+      "sha256": "327a021e8e0e4d3b1bfc546f0b0be3940766472da1be0f65ea2215ae7276ab58",
+      "bytes": 12724,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s2_a0.1_eval.npz": {
+      "sha256": "eee53559ebad17f46c39932275bbf70dfe1c1549f49c4a34246b909d842ec549",
+      "bytes": 11670,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s2_a0.1_train.npz": {
+      "sha256": "d61430f89ea79ba944a9183eff9f7b184fcc3ba1af16809f59fb0324a23723e2",
+      "bytes": 11664,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s2_a1_eval.npz": {
+      "sha256": "1f595388ba9275f38914f263a12e9b8cf2186a1168b39404dff691a9acdf3f7d",
+      "bytes": 12655,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/dentate_s2_a1_train.npz": {
+      "sha256": "d2cb54f394811005cdb29e2a7c655356bbd3691973f036f9cda43934e2500fcb",
+      "bytes": 12648,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s0_a0.1_eval.npz": {
+      "sha256": "57abecc4fe6749d850d8a43f7b43e95e3a0ea1170397c7907e2d31ff15b83b7d",
+      "bytes": 11286,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s0_a0.1_train.npz": {
+      "sha256": "27bdcff294e86fa2a5ee4e44fecc1f83cf018f2818311a318ba948712a0878b6",
+      "bytes": 11298,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s0_a1_eval.npz": {
+      "sha256": "9b037cd71ddc330875c19fa5c26188aad3aaf25739e156488d46d2b5ea8dbda2",
+      "bytes": 12465,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s0_a1_train.npz": {
+      "sha256": "40a4e424edb79e82bec90401221f4a4e4775a625359896a994e26c2a443ef973",
+      "bytes": 12478,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s1_a0.1_eval.npz": {
+      "sha256": "fd12805e4dff0a0199a778ede4aa8de60fc004287cf6b148d6ee426e73baaee3",
+      "bytes": 10944,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s1_a0.1_train.npz": {
+      "sha256": "74231d6f47e964dd583c7587191c4db788197e8819400525ea9bbb947cf0e40a",
+      "bytes": 10953,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s1_a1_eval.npz": {
+      "sha256": "7c7175e64844aefc91290463376b2c470b0542f74d944a1280a0c29c1214d986",
+      "bytes": 12655,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s1_a1_train.npz": {
+      "sha256": "fb3e2c6cc0ac73d95dc8e398849d521f4a5faf80b834fd1e3f48c4addfe0e4c9",
+      "bytes": 12663,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s2_a0.1_eval.npz": {
+      "sha256": "b34fe4616ac1a0ea8324796e16891bdda82f8f6746553e41da18f69c4a93b658",
+      "bytes": 11253,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s2_a0.1_train.npz": {
+      "sha256": "041fdbaec5564975599237f90d6c27a76c877d3a89d2621ffafb05df0421bae3",
+      "bytes": 11238,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s2_a1_eval.npz": {
+      "sha256": "b3fe3129785559ae95e37ada54208de58de2b209603242bec79d81a860efa0b6",
+      "bytes": 12638,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/probes/setty_s2_a1_train.npz": {
+      "sha256": "4f15ebe553baec4619811b528291ef2c5e0c1298805b92373ee9b13b0d4902d8",
+      "bytes": 12640,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/run_probes.py": {
+      "sha256": "6ed153b6c5e3bb1d2ac8904ba75fe9ec493a3ffc0a1a0a96a1c25d333ffabbda",
+      "bytes": 4288,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/models/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/models/encoders.py": {
+      "sha256": "56d24b04d08eb9b175cfb3417a2e9c7c2f11bce18392b794ae6ac88a019ffe7a",
+      "bytes": 20724,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/models/shared_modules.py": {
+      "sha256": "d330ed752619581631f83b8422be3d62560b07e5c983d641d83fb6b83c05d4d8",
+      "bytes": 11141,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/models/topic_transformer.py": {
+      "sha256": "d39fdd997212f2542bc1296c53fbc91ec8bc3bfb3519e3cc40f777122620453e",
+      "bytes": 16198,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/utils/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/utils/base_model.py": {
+      "sha256": "9d83b652aa83bc9f45e603e4aa53f325c6b71e2a26ea5230b1d1c9e963bb7fce",
+      "bytes": 15057,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/source/utils/mixins.py": {
+      "sha256": "325ba792e09a44fd4789477520577548f99bf6de59e48a26d5f4cbe8d0528f29",
+      "bytes": 18180,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/train.py": {
+      "sha256": "c7a59afdad9300a9dbb1d04dbfcfa889f3caadbcfad2391b12df196298c20abe",
+      "bytes": 5047,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/completion.json": {
+      "sha256": "5b2ee48413e703cb96c8d7df98fceb2da8b2debd03e49d4a3bc1a790065fdbc7",
+      "bytes": 48,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a0.1/initial.pt": {
+      "sha256": "890bd42236fabfd314d932e282e4a675beda190c8a1f99320a5f959368610007",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a0.1/last.pt": {
+      "sha256": "aaf03369210512533b17e1071c8cfd5d125f3b311d77351f7a2220bcf6cd0095",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a0.1/latent.npz": {
+      "sha256": "b2a64069781ad08cd66994cf4e8df432252b694dbd70feda0fc3545d5be4dae2",
+      "bytes": 14933,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a0.1/result.json": {
+      "sha256": "767adf62537290d75b04aa43f5d37b82ae02c50d727d140a377b2a0ed8f7ffab",
+      "bytes": 5182,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a1/initial.pt": {
+      "sha256": "0a8cacf24ddc30f693db4f042e40d032381e2b5681e4e67484e1d86d8f1cc00e",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a1/last.pt": {
+      "sha256": "5e2aa08ed0d2b888658d86e712bedad20b390e1aead363233a18f86edb45451d",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a1/latent.npz": {
+      "sha256": "e86dd1180df5c912c4976d98e552f77c580c13497b570e72bf0f2dfb95bae240",
+      "bytes": 16352,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_a1/result.json": {
+      "sha256": "34e96240bc2e0a285e9c4ba4f8cb7818379c44d3f396f7c16db77aa4c067e055",
+      "bytes": 5193,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s0_schedule.npz": {
+      "sha256": "6bd2237eaf426f8458f5c5c15b33bd9f43a534edefe6e1cdc06c084f9c16bd89",
+      "bytes": 848386,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a0.1/initial.pt": {
+      "sha256": "d132c02b3d8881ad45b0e1ffc853aac29809159ee777f79d5051ccf07464f009",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a0.1/last.pt": {
+      "sha256": "8a571b387caaa7f3606c1d8fb47b03a34c57b53b2aa8a41d66956186cf00bf67",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a0.1/latent.npz": {
+      "sha256": "a06c8167de4895bdf755bfa353db16b0e4d1412f7d7b171a9b756e5115281cad",
+      "bytes": 15261,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a0.1/result.json": {
+      "sha256": "ee1986d711ada3a7595744adbbc5c32bb1ca02f0125f23b1197553e858e6accd",
+      "bytes": 5190,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a1/initial.pt": {
+      "sha256": "f8f1a55ea7c9e3dc5d29fbffef80298d0f475e0596400d131babc53af6d80d82",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a1/last.pt": {
+      "sha256": "251af7ffd1829eb3e881e71f109f6173a6ea3913111cfefa0ecdf596d7edab7c",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a1/latent.npz": {
+      "sha256": "5d9397f9263b7f62801e94c89eb1dd8ad64ccdf05b2909733d948eaa2a459bff",
+      "bytes": 16318,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_a1/result.json": {
+      "sha256": "577750578154d9ff45363192460b1ecfa53f3befc0919603d7ec6300ea67edd6",
+      "bytes": 5183,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s1_schedule.npz": {
+      "sha256": "d5df1ddb19f2a63fb1dcb371d5a82a364abbf0436f149ba8f3eb70942424c712",
+      "bytes": 848373,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a0.1/initial.pt": {
+      "sha256": "659f7272104565671593db4f6ba90238297f5865ead2f70f8b8cdfe4627b9474",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a0.1/last.pt": {
+      "sha256": "549ce56a81c62fd096150a6fd8dd0cf0c585938de6e60aed2d91bbad6be3e3ad",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a0.1/latent.npz": {
+      "sha256": "26c2cf749171e84d9a9728582be1a5809092ac500ce7a6ffea693c9615ca6bb6",
+      "bytes": 14244,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a0.1/result.json": {
+      "sha256": "0eeed892f7bf266121c11cf816dec2e650f7bb481d24ce9309239bd33bb989a6",
+      "bytes": 5159,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a1/initial.pt": {
+      "sha256": "1228bb9f86c9c553f8ef931e2edc024d308d164a9652fc108c15fc48e40e250f",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a1/last.pt": {
+      "sha256": "32c1fca43f5d1c51c9a215e917af73fb97227d666ab8cc11cc011db087e94978",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a1/latent.npz": {
+      "sha256": "a4c876776ff0aa62d4f21cd5878a18ce5fcaffc6705aed35855b9571f7c67e1f",
+      "bytes": 16164,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_a1/result.json": {
+      "sha256": "18a171d3c9231d47562bdd00e477978ab281a5b14d9d099d8d566907dc245047",
+      "bytes": 5198,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/dentate_s2_schedule.npz": {
+      "sha256": "fe2859266d53299ed9fca9548ee06f3d318de013dcb01fdbc93e46921714106f",
+      "bytes": 848511,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/results.json": {
+      "sha256": "1069299f28d1a0422f41f74948f5ac80053ab730f0cca348e10356edec1b0445",
+      "bytes": 68175,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a0.1/initial.pt": {
+      "sha256": "890bd42236fabfd314d932e282e4a675beda190c8a1f99320a5f959368610007",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a0.1/last.pt": {
+      "sha256": "b2d08ce326d964f38aec178c730bfdd54e4635bfeaea5779b4dc83fb01b852fa",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a0.1/latent.npz": {
+      "sha256": "770fd23b4060fe701cdc6c152afd356c3653f17f6e7ee2fe056f75538d4982b3",
+      "bytes": 14030,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a0.1/result.json": {
+      "sha256": "c9d428846bdb599aca9b8e413e994eedde39138c26aa3e9aba0042728c9492e3",
+      "bytes": 5329,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a1/initial.pt": {
+      "sha256": "0a8cacf24ddc30f693db4f042e40d032381e2b5681e4e67484e1d86d8f1cc00e",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a1/last.pt": {
+      "sha256": "ad578b89bd9e1f51133e2949fd20b975a47aa801ecb8e328e80706930c8c4bac",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a1/latent.npz": {
+      "sha256": "cbf46ce7778460965ecc4589b9736b78e45c8b7910b6c2577a8ec051d6f8a237",
+      "bytes": 16241,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s0_a1/result.json": {
+      "sha256": "3789bfaf92ecbbe42a0d18774ae54c7e20f4a75853a0d7a4bf492c77cd09ffc2",
+      "bytes": 5344,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s0_schedule.npz": {
+      "sha256": "6bd2237eaf426f8458f5c5c15b33bd9f43a534edefe6e1cdc06c084f9c16bd89",
+      "bytes": 848386,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a0.1/initial.pt": {
+      "sha256": "d132c02b3d8881ad45b0e1ffc853aac29809159ee777f79d5051ccf07464f009",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a0.1/last.pt": {
+      "sha256": "7f64559062fe83aa44208dbc092f032c2cc1c8ac506e8c9eb48cbae279d61c1f",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a0.1/latent.npz": {
+      "sha256": "f0eb334286cf7393e0149d7a263040fb935e3fee69dc93adb63323e69ecaab6e",
+      "bytes": 12870,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a0.1/result.json": {
+      "sha256": "3922f503b795049c7385bb4e7af8ed9d59b76e9b13329f1cb4eff9dc7677115f",
+      "bytes": 5180,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a1/initial.pt": {
+      "sha256": "f8f1a55ea7c9e3dc5d29fbffef80298d0f475e0596400d131babc53af6d80d82",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a1/last.pt": {
+      "sha256": "93259c7811eb3b5e3a75d2d9dd5f7d6010fb1da17d97b512bbf0363d6866c2de",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a1/latent.npz": {
+      "sha256": "47ecda4dbe547e0f9bea066979688ab5277b370fb4a4c1c4624929d98810021b",
+      "bytes": 16353,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s1_a1/result.json": {
+      "sha256": "ba8e1675c4ecefd5703f1cf5ec11a88cdd70db2b2d18ce67500e5d354208e0d8",
+      "bytes": 5326,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s1_schedule.npz": {
+      "sha256": "d5df1ddb19f2a63fb1dcb371d5a82a364abbf0436f149ba8f3eb70942424c712",
+      "bytes": 848373,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a0.1/initial.pt": {
+      "sha256": "659f7272104565671593db4f6ba90238297f5865ead2f70f8b8cdfe4627b9474",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a0.1/last.pt": {
+      "sha256": "f8aeb358391f240219700af0e30f730898344a6e9ed8498f6f52479e3ccfd7d8",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a0.1/latent.npz": {
+      "sha256": "0707ed8ec8d9748a15ff52ce56542e98213a6d9490e723277d9d845cb8f57cbf",
+      "bytes": 13679,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a0.1/result.json": {
+      "sha256": "5a344e973d772dc87ebbfeb8fbc5d5ea8240096736f92185502fe60a505afbfd",
+      "bytes": 5182,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a1/initial.pt": {
+      "sha256": "1228bb9f86c9c553f8ef931e2edc024d308d164a9652fc108c15fc48e40e250f",
+      "bytes": 13811080,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a1/last.pt": {
+      "sha256": "26c7ee9b430c06babec68649843598c90fee1fe26ea6ebf429bcaa181c4e325d",
+      "bytes": 13802843,
+      "distribution": "zenodo-checkpoint-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a1/latent.npz": {
+      "sha256": "e81ca370830b8917318b5a2b1120abcb431120a1c418262f0f58fed77ea464e5",
+      "bytes": 16375,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s2_a1/result.json": {
+      "sha256": "3d40f91cfb382ed354abdda1621b1b35287803f5e90cd046f1819a9364c4a38a",
+      "bytes": 5331,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/reproduction/training/setty_s2_schedule.npz": {
+      "sha256": "fe2859266d53299ed9fca9548ee06f3d318de013dcb01fdbc93e46921714106f",
+      "bytes": 848511,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "evidence/training_results.json": {
+      "sha256": "1069299f28d1a0422f41f74948f5ac80053ab730f0cca348e10356edec1b0445",
+      "bytes": 68175,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "extra.bib": {
+      "sha256": "87d163a3c6b6fe0ef12aeb75b8d0b5bf6af03eb4a5e54610aa358923f128c07b",
+      "bytes": 16399,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figure-build.json": {
+      "sha256": "bbba43f6c19a0e258f7d2718dae9f5181445fb07c676c9f426fb8b123d8dc658",
+      "bytes": 1123,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/architecture.pdf": {
+      "sha256": "ff303c72ba65606f87c98fdf923c2d356fe68276a55a6edef4222bc49b91d665",
+      "bytes": 38362,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/architecture.svg": {
+      "sha256": "5bda78d706b4b5e20298aa9cdd5375f4654d53cad7c4cd212dee1860039ad7dd",
+      "bytes": 12832,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/collapse_alpha.pdf": {
+      "sha256": "eff5c2fe9fb502aaef3c290618690bcae20a6f642f500aa78ccc356e1febc560",
+      "bytes": 28270,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/collapse_alpha.png": {
+      "sha256": "fbe15bb3865615a5bc7eb82d84b21d7c9e03918636ca67039c7e2200481b2891",
+      "bytes": 59389,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/matched_training.pdf": {
+      "sha256": "d124966e8106e473bd665549d21f22550a51deb6049f40b4c95acefeeb2f27e4",
+      "bytes": 23566,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/matched_training.png": {
+      "sha256": "7b017f76920dad30d4442b7b06a77f8c740e43ae9c453669ef60e7f4ef3d4c4f",
+      "bytes": 74687,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/tear_vs_alpha.pdf": {
+      "sha256": "ba9ddb6518382a2677d712e5b83d75d2addd7085d6f68c44d5c8a2dd0d8e6808",
+      "bytes": 17140,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/tear_vs_alpha.png": {
+      "sha256": "364bda469851633569ae41d1fae5919404f026717e5ac85a05f972ff2947ffef",
+      "bytes": 38902,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/token_probes.pdf": {
+      "sha256": "f2325d7e831d8dad0f602c9c68c71e6f269daa8b821e5ffd3a5593dece512587",
+      "bytes": 24672,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/token_probes.png": {
+      "sha256": "96f0d910fcda2e68232d02997e09903a64272709774f9cb6301d5cbe7c99861a",
+      "bytes": 47014,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/topic-transformer_branch.pdf": {
+      "sha256": "115d380809f581bc6790f0d9a56f72832531efbda7d91259d69a3db4d65e6395",
+      "bytes": 15478,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/topic-transformer_branch.png": {
+      "sha256": "0b20eb809759290444d29b256ed68661d0b05bc25d521d378cf9420c3729e7cb",
+      "bytes": 30185,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/topic-transformer_dose.pdf": {
+      "sha256": "942b3aa27381c71dda6ab6b0456f9cb50868192f554930d183babcdb90069631",
+      "bytes": 26095,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/topic-transformer_dose.png": {
+      "sha256": "5dab046454065fd0aa1137d9925cf8637466b27255b10c4b31d5c7f9a1964bb8",
+      "bytes": 66498,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/topic-transformer_setty_umap_400.pdf": {
+      "sha256": "f413d9c5d9a13c258c85192752a0ad312365a610bd394c0fd0443c2c1807956c",
+      "bytes": 124960,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "figures/topic-transformer_setty_umap_400.png": {
+      "sha256": "2e7cd99dcf4b18039006ddc717341d5a74d97e45f5181e02cf63e171972981f4",
+      "bytes": 68518,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "introduction.tex": {
+      "sha256": "31bd1be2c2f119608eb92cf2f5d730c7cbca98dbacaf8f43347a60dfa36863a1",
+      "bytes": 5805,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "paper.pdf": {
+      "sha256": "291fcbec447ebfb7883be2403e93f7df5a506f8c9eb7037eb0eec1f70db957fb",
+      "bytes": 428113,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "paper.tex": {
+      "sha256": "e11df51b5b914f37576a8f362388025321b2cd57090acac386b7bf739cb56d63",
+      "bytes": 22463,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "publication-manifest.json": {
+      "sha256": "08c7de3d6ee615778c25e0cbb9b3f881963aa2e02af2965c57e0ebc5f1f7101c",
+      "bytes": 19431,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "release-info.json": {
+      "sha256": "0f622815c54b32c5abdfff42552defa5c88056288a29332dedef75f5fa746bad",
+      "bytes": 1374,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "requirements-analysis.txt": {
+      "sha256": "3d1566702505871d1a5289b2d9e55e7fd9564b06e6cc49c063b46c5db0931d8b",
+      "bytes": 47,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/build_figures.R": {
+      "sha256": "37314355b9793e452a7a1ccf1aee632d78ae2cb87b8b3d1d82139d4159180143",
+      "bytes": 13115,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/figure-data-counts.json": {
+      "sha256": "cb338cb8f6ad8116621fb5d9bb6226a82a19db182bdca16bdb8277f815682492",
+      "bytes": 190,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/figure_composition.R": {
+      "sha256": "4ad7bf8a3db5f97edc1845324552d8373ba4d07a176a8b6073edd0e48da17483",
+      "bytes": 3663,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/figure_style.R": {
+      "sha256": "3dcddf769ac11eb0b43b2b0fab1579712bea358bc9d5714108fab98ae309d75f",
+      "bytes": 2281,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/historical_plot_rows.csv": {
+      "sha256": "376710320211c5e11c612804fa35ed6aba7c8f1b215cd0ba8868e178aa38828e",
+      "bytes": 21707,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/provenance.json": {
+      "sha256": "5a9bea2abad031dd760fcbe0b2b52e7cb2f892735dd77835421ee4ce6b02ee93",
+      "bytes": 3045,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/topic-transformer-alpha0p1-400ep-setty-20260908.json": {
+      "sha256": "a9bbc6999d7195ab0b3da84899161c315f286d1de6cfe6270d1208cf8ad6c8a9",
+      "bytes": 11076,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/topic-transformer-prior-20260907.json": {
+      "sha256": "118577930fd02717f12fc3bbc27a9a21e934c4017961110c418a294132331525",
+      "bytes": 95591,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/topic-variants-400ep-setty-20260907.json": {
+      "sha256": "9d7c45a2ceb43f659cd83bdb021eb03a8c151b3f98b428afc00aa4afb97155b9",
+      "bytes": 17184,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/topic-variants-alpha-1000ep-fourbg-20260908.json": {
+      "sha256": "252da7e27ca1d5475a813ce5e4ace510c247835c921e81970061f7a33bf43297",
+      "bytes": 157379,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/umap400/topic-transformer_400ep_alpha1_s0.csv": {
+      "sha256": "baeeb62ab869cab846f7ee7c61e16ce794fc6a49df552b4212edcea6128161e3",
+      "bytes": 22311,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/umap400/topic-transformer_400ep_alpha1_s1.csv": {
+      "sha256": "7ec76832cc086b990c691fd721e87653d19bf309066dcbad7c1f7e05335b32de",
+      "bytes": 22470,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/umap400/topic-transformer_400ep_alpha1_s2.csv": {
+      "sha256": "edbe4e68df36f4a44e351c9f472b247eb3d380cd33fd057040e00d02453aca95",
+      "bytes": 22308,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/umap400/topic-transformer_400ep_control_s0.csv": {
+      "sha256": "e0f5a55a585a40c10c26416f141427ff9febe71418ec94912e0c83e6a2650e3f",
+      "bytes": 22421,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/umap400/topic-transformer_400ep_control_s1.csv": {
+      "sha256": "8bc93a4274e5ce2fa4ebff69f295ad39addc38612b0476657227b545ba2b9485",
+      "bytes": 22235,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/inputs/umap400/topic-transformer_400ep_control_s2.csv": {
+      "sha256": "e4ecf44ed0a51735e8c222754e7ad729e2d1505437b2f6f70103080674cb957b",
+      "bytes": 22297,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/render_architecture.py": {
+      "sha256": "67996e80b51dd44c4440b1138d009e4aea8311ee81ee11723df3d2ce3aa42af9",
+      "bytes": 3548,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/robustness_audit.py": {
+      "sha256": "6f84813fccb0c28aefa71ff2a7921d30a9009a049d3199ffcb8d055b177b1d12",
+      "bytes": 5849,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "scripts/verify_publication.py": {
+      "sha256": "a678f4818ee8589734cdad02ea71a22adbe46cbc6bdede38c53d65f157a2421b",
+      "bytes": 2098,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "standalone-assets/preamble.tex": {
+      "sha256": "883c1a3739f403077f150d370d859daabb64e19ec71fb799cde4cda7334469e5",
+      "bytes": 1471,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "standalone-assets/refs.bib": {
+      "sha256": "60f9165ab8d286d54c11abd3e5c2620d5fec1d4a9f230ace1ef839c1fd5be231",
+      "bytes": 11121,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "standalone-assets/topic-transformer-1000_setty.tex": {
+      "sha256": "03b52432206ca51ccf3e8386da877bf8c9cefed117d69e7ef1e680d9821b3dc5",
+      "bytes": 849,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "standalone-assets/topic-transformer-400-alpha0p1_setty.tex": {
+      "sha256": "400f1f76196c2c5efb5477c5c49dedfe512b13b5f6161223fc7c2c62505389b7",
+      "bytes": 345,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "standalone-assets/topic-transformer_alpha.tex": {
+      "sha256": "7f9279cf042afecfe0d0daddfa9d911b6ec5da724f1dc044b02cd43007c10fa6",
+      "bytes": 1322,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "standalone-assets/topic-transformer_umap_400_purity.tex": {
+      "sha256": "d0aa92556fc6ba3c5cf12e91ab6cb0d26e86fe284be5b9452445f3582c50edd4",
+      "bytes": 233,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "tables/matched_training.tex": {
+      "sha256": "8565c6c6672cd240a09cf784f707ba08809e1ae8d9ed86761d30b872486481bd",
+      "bytes": 862,
+      "distribution": "github-and-zenodo-source-archive"
+    },
+    "validation/robustness-audit.json": {
+      "sha256": "28a67f36fd246a680ef74df093a618e9c8b4f59b14475bf82815d1856eb79fa7",
+      "bytes": 11050,
+      "distribution": "github-and-zenodo-source-archive"
+    }
+  },
+  "source_files": 143,
+  "checkpoint_files": 24,
+  "historical_hash_policy": "Producer digests inside scientific records identify historical computations. This manifest hashes the actual distributed bytes."
+}

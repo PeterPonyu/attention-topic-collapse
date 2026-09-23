@@ -1,0 +1,21 @@
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite this study and its archived research release.",
+  "type": "software",
+  "title": "Single-topic collapse in a within-cell attention topic model: an implementation and measurement case study",
+  "authors": [
+    {
+      "family-names": "Fu",
+      "given-names": "Zeyu"
+    }
+  ],
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.22914481",
+  "repository-code": "https://github.com/PeterPonyu/attention-topic-collapse",
+  "url": "https://doi.org/10.5281/zenodo.22914481",
+  "license": [
+    "MIT",
+    "CC-BY-4.0"
+  ],
+  "abstract": "Matched computational experiments and numerical diagnostics of allocation collapse in a within-cell attention topic model. The archive contains the manuscript, vector figures, matched training and intervention records, saved allocation arrays, schedules, protocols and source snapshots. CPU commands reproduce collapse intervals and saved-result numerical diagnostics without training, source-expression snapshots or model checkpoints. Model checkpoints are supplied separately within this archive. Processed Setty and Dentate source-expression snapshots are not distributed because their exact upstream-version and annotation-transformation provenance has not been established for redistribution. Historical model-state probes and training additionally require separately and lawfully obtained, hash-matching expression inputs. Raw-data preprocessing, every historical training sweep and graph-score regeneration are outside the verified public reproduction scope."
+}

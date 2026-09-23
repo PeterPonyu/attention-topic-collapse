@@ -1,0 +1,71 @@
+{
+  "source": "training_results.json",
+  "unit": "training seed within a fixed public data object",
+  "method": "two-sided exact Clopper-Pearson, alpha=0.05",
+  "groups": [
+    {
+      "dataset": "dentate",
+      "alpha": 0.1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "collapsed": 0,
+      "total": 3,
+      "rate": 0.0,
+      "ci95_clopper_pearson": [
+        0.0,
+        0.7075982261787135
+      ]
+    },
+    {
+      "dataset": "dentate",
+      "alpha": 1.0,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "collapsed": 0,
+      "total": 3,
+      "rate": 0.0,
+      "ci95_clopper_pearson": [
+        0.0,
+        0.7075982261787135
+      ]
+    },
+    {
+      "dataset": "setty",
+      "alpha": 0.1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "collapsed": 2,
+      "total": 3,
+      "rate": 0.6666666666666666,
+      "ci95_clopper_pearson": [
+        0.09429932405024594,
+        0.9915962413403874
+      ]
+    },
+    {
+      "dataset": "setty",
+      "alpha": 1.0,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "collapsed": 0,
+      "total": 3,
+      "rate": 0.0,
+      "ci95_clopper_pearson": [
+        0.0,
+        0.7075982261787135
+      ]
+    }
+  ]
+}

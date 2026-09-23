@@ -1,0 +1,8 @@
+{
+  "topic-transformer_dose": 60,
+  "topic-transformer_setty_umap_400": 2700,
+  "collapse_alpha": [87, 69, 87],
+  "tear_vs_alpha": 36,
+  "matched_training": 24,
+  "token_probes": [48, 24]
+}

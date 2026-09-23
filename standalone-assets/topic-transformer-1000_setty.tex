@@ -1,0 +1,17 @@
+\begin{tabular}{llcccccc}
+\toprule
+Arm & Seed & Coherence & Perplexity & Degenerate & Reachability & Palantir $k$NN $R^2$ & Epochs trained \\
+\midrule
+\multirow{3}{*}{$\alpha=0.1$} & 0 & \textit{n.q.} & 1.000 & yes & 1.000 & \textit{n.q.} & 607$^{\ast}$ \\
+ & 1 & \textit{n.q.} & 1.000 & yes & 1.000 & \textit{n.q.} & 492$^{\ast}$ \\
+ & 2 & \textit{n.q.} & 1.000 & yes & 1.000 & \textit{n.q.} & 536$^{\ast}$ \\
+\midrule
+\multirow{3}{*}{$\alpha=1$} & 0 & 0.786 & 5.417 & no & 1.000 & 0.554 & 1000 \\
+ & 1 & 0.809 & 4.880 & no & 1.000 & 0.596 & 1000 \\
+ & 2 & 0.799 & 5.108 & no & 0.838 & 0.635 & 1000 \\
+\midrule
+\multirow{3}{*}{Gaussian-latent control} & 0 & --- & --- & --- & 1.000 & 0.752 & 551$^{\ast}$ \\
+ & 1 & --- & --- & --- & 0.838 & 0.779 & 698$^{\ast}$ \\
+ & 2 & --- & --- & --- & 1.000 & 0.764 & 587$^{\ast}$ \\
+\bottomrule
+\end{tabular}

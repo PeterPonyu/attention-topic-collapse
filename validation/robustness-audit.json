@@ -1,0 +1,389 @@
+{
+  "scope": "Independent saved-array recomputation; no training, threshold changes or new seed trials",
+  "input_sha256": {
+    "evidence/training_results.json": "1069299f28d1a0422f41f74948f5ac80053ab730f0cca348e10356edec1b0445",
+    "evidence/reproduction/training/setty_s0_a0.1/latent.npz": "770fd23b4060fe701cdc6c152afd356c3653f17f6e7ee2fe056f75538d4982b3",
+    "evidence/reproduction/training/setty_s0_a1/latent.npz": "cbf46ce7778460965ecc4589b9736b78e45c8b7910b6c2577a8ec051d6f8a237",
+    "evidence/reproduction/training/setty_s1_a0.1/latent.npz": "f0eb334286cf7393e0149d7a263040fb935e3fee69dc93adb63323e69ecaab6e",
+    "evidence/reproduction/training/setty_s1_a1/latent.npz": "47ecda4dbe547e0f9bea066979688ab5277b370fb4a4c1c4624929d98810021b",
+    "evidence/reproduction/training/setty_s2_a0.1/latent.npz": "0707ed8ec8d9748a15ff52ce56542e98213a6d9490e723277d9d845cb8f57cbf",
+    "evidence/reproduction/training/setty_s2_a1/latent.npz": "e81ca370830b8917318b5a2b1120abcb431120a1c418262f0f58fed77ea464e5",
+    "evidence/reproduction/training/dentate_s0_a0.1/latent.npz": "b2a64069781ad08cd66994cf4e8df432252b694dbd70feda0fc3545d5be4dae2",
+    "evidence/reproduction/training/dentate_s0_a1/latent.npz": "e86dd1180df5c912c4976d98e552f77c580c13497b570e72bf0f2dfb95bae240",
+    "evidence/reproduction/training/dentate_s1_a0.1/latent.npz": "a06c8167de4895bdf755bfa353db16b0e4d1412f7d7b171a9b756e5115281cad",
+    "evidence/reproduction/training/dentate_s1_a1/latent.npz": "5d9397f9263b7f62801e94c89eb1dd8ad64ccdf05b2909733d948eaa2a459bff",
+    "evidence/reproduction/training/dentate_s2_a0.1/latent.npz": "26c2cf749171e84d9a9728582be1a5809092ac500ce7a6ffea693c9615ca6bb6",
+    "evidence/reproduction/training/dentate_s2_a1/latent.npz": "a4c876776ff0aa62d4f21cd5878a18ce5fcaffc6705aed35855b9571f7c67e1f"
+  },
+  "arms": [
+    {
+      "dataset": "setty",
+      "seed": 0,
+      "alpha": 0.1,
+      "max_coordinate_range": 0.19283711910247803,
+      "argmax_topics": 1,
+      "exact_pair_js": 0.0004867021132946745,
+      "mean_perplexity": 1.0022917985916138,
+      "strict_collapse": false,
+      "simplex_max_error": 0.0
+    },
+    {
+      "dataset": "setty",
+      "seed": 0,
+      "alpha": 1.0,
+      "max_coordinate_range": 0.3445438742637634,
+      "argmax_topics": 1,
+      "exact_pair_js": 0.014399765970124828,
+      "mean_perplexity": 1.6640459299087524,
+      "strict_collapse": false,
+      "simplex_max_error": 2.384185791015625e-07
+    },
+    {
+      "dataset": "setty",
+      "seed": 1,
+      "alpha": 0.1,
+      "max_coordinate_range": 5.723633372811676e-13,
+      "argmax_topics": 1,
+      "exact_pair_js": 2.390645184948549e-16,
+      "mean_perplexity": 1.0,
+      "strict_collapse": true,
+      "simplex_max_error": 0.0
+    },
+    {
+      "dataset": "setty",
+      "seed": 1,
+      "alpha": 1.0,
+      "max_coordinate_range": 0.7161611914634705,
+      "argmax_topics": 2,
+      "exact_pair_js": 0.04780452198854637,
+      "mean_perplexity": 1.548482894897461,
+      "strict_collapse": false,
+      "simplex_max_error": 1.7881393432617188e-07
+    },
+    {
+      "dataset": "setty",
+      "seed": 2,
+      "alpha": 0.1,
+      "max_coordinate_range": 1.7412200153943402e-12,
+      "argmax_topics": 1,
+      "exact_pair_js": 2.2045949115906395e-15,
+      "mean_perplexity": 1.0,
+      "strict_collapse": true,
+      "simplex_max_error": 0.0
+    },
+    {
+      "dataset": "setty",
+      "seed": 2,
+      "alpha": 1.0,
+      "max_coordinate_range": 0.5537848472595215,
+      "argmax_topics": 2,
+      "exact_pair_js": 0.03080238118741424,
+      "mean_perplexity": 1.7029134035110474,
+      "strict_collapse": false,
+      "simplex_max_error": 2.384185791015625e-07
+    },
+    {
+      "dataset": "dentate",
+      "seed": 0,
+      "alpha": 0.1,
+      "max_coordinate_range": 1.0,
+      "argmax_topics": 2,
+      "exact_pair_js": 0.27020837799932657,
+      "mean_perplexity": 1.0591357946395874,
+      "strict_collapse": false,
+      "simplex_max_error": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "dentate",
+      "seed": 0,
+      "alpha": 1.0,
+      "max_coordinate_range": 0.9397066831588745,
+      "argmax_topics": 3,
+      "exact_pair_js": 0.1855501798823436,
+      "mean_perplexity": 1.8346500396728516,
+      "strict_collapse": false,
+      "simplex_max_error": 2.384185791015625e-07
+    },
+    {
+      "dataset": "dentate",
+      "seed": 1,
+      "alpha": 0.1,
+      "max_coordinate_range": 1.0,
+      "argmax_topics": 2,
+      "exact_pair_js": 0.28506003959330617,
+      "mean_perplexity": 1.0333882570266724,
+      "strict_collapse": false,
+      "simplex_max_error": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "dentate",
+      "seed": 1,
+      "alpha": 1.0,
+      "max_coordinate_range": 0.9606364369392395,
+      "argmax_topics": 3,
+      "exact_pair_js": 0.24424550372764092,
+      "mean_perplexity": 1.7450405359268188,
+      "strict_collapse": false,
+      "simplex_max_error": 2.384185791015625e-07
+    },
+    {
+      "dataset": "dentate",
+      "seed": 2,
+      "alpha": 0.1,
+      "max_coordinate_range": 1.0,
+      "argmax_topics": 2,
+      "exact_pair_js": 0.28278894108370606,
+      "mean_perplexity": 1.0,
+      "strict_collapse": false,
+      "simplex_max_error": 0.0
+    },
+    {
+      "dataset": "dentate",
+      "seed": 2,
+      "alpha": 1.0,
+      "max_coordinate_range": 0.9650998115539551,
+      "argmax_topics": 3,
+      "exact_pair_js": 0.23903003416019233,
+      "mean_perplexity": 1.6350986957550049,
+      "strict_collapse": false,
+      "simplex_max_error": 2.384185791015625e-07
+    }
+  ],
+  "groups": [
+    {
+      "dataset": "setty",
+      "alpha": 0.1,
+      "collapsed": 2,
+      "total": 3,
+      "ci95": [
+        0.09429932405024609,
+        0.9915962413403874
+      ],
+      "range_threshold_sensitivity": {
+        "1e-10": 2,
+        "1e-08": 2,
+        "1e-06": 2
+      },
+      "leave_one_seed_out": {
+        "0": {
+          "collapsed": 2,
+          "n": 2
+        },
+        "1": {
+          "collapsed": 1,
+          "n": 2
+        },
+        "2": {
+          "collapsed": 1,
+          "n": 2
+        }
+      }
+    },
+    {
+      "dataset": "setty",
+      "alpha": 1,
+      "collapsed": 0,
+      "total": 3,
+      "ci95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "range_threshold_sensitivity": {
+        "1e-10": 0,
+        "1e-08": 0,
+        "1e-06": 0
+      },
+      "leave_one_seed_out": {
+        "0": {
+          "collapsed": 0,
+          "n": 2
+        },
+        "1": {
+          "collapsed": 0,
+          "n": 2
+        },
+        "2": {
+          "collapsed": 0,
+          "n": 2
+        }
+      }
+    },
+    {
+      "dataset": "dentate",
+      "alpha": 0.1,
+      "collapsed": 0,
+      "total": 3,
+      "ci95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "range_threshold_sensitivity": {
+        "1e-10": 0,
+        "1e-08": 0,
+        "1e-06": 0
+      },
+      "leave_one_seed_out": {
+        "0": {
+          "collapsed": 0,
+          "n": 2
+        },
+        "1": {
+          "collapsed": 0,
+          "n": 2
+        },
+        "2": {
+          "collapsed": 0,
+          "n": 2
+        }
+      }
+    },
+    {
+      "dataset": "dentate",
+      "alpha": 1,
+      "collapsed": 0,
+      "total": 3,
+      "ci95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "range_threshold_sensitivity": {
+        "1e-10": 0,
+        "1e-08": 0,
+        "1e-06": 0
+      },
+      "leave_one_seed_out": {
+        "0": {
+          "collapsed": 0,
+          "n": 2
+        },
+        "1": {
+          "collapsed": 0,
+          "n": 2
+        },
+        "2": {
+          "collapsed": 0,
+          "n": 2
+        }
+      }
+    }
+  ],
+  "probe_records_verified": 144,
+  "native_array_graph_checks": [
+    {
+      "dataset": "setty",
+      "seed": 0,
+      "alpha": 0.1,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 4.8198471111782654e-14
+    },
+    {
+      "dataset": "setty",
+      "seed": 0,
+      "alpha": 1.0,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 1.580097475936022e-05
+    },
+    {
+      "dataset": "setty",
+      "seed": 1,
+      "alpha": 0.1,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 3.0875019113467136e-15
+    },
+    {
+      "dataset": "setty",
+      "seed": 1,
+      "alpha": 1.0,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 5.4981909266640464e-05
+    },
+    {
+      "dataset": "setty",
+      "seed": 2,
+      "alpha": 0.1,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 7.777061261728517e-15
+    },
+    {
+      "dataset": "setty",
+      "seed": 2,
+      "alpha": 1.0,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 3.249251195087286e-05
+    },
+    {
+      "dataset": "dentate",
+      "seed": 0,
+      "alpha": 0.1,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 4.423752716145626e-14
+    },
+    {
+      "dataset": "dentate",
+      "seed": 0,
+      "alpha": 1.0,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 3.8284885601518634e-05
+    },
+    {
+      "dataset": "dentate",
+      "seed": 1,
+      "alpha": 0.1,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 2.7013009010921036e-13
+    },
+    {
+      "dataset": "dentate",
+      "seed": 1,
+      "alpha": 1.0,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 6.750860476183956e-05
+    },
+    {
+      "dataset": "dentate",
+      "seed": 2,
+      "alpha": 0.1,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 1.0761084119825854e-14
+    },
+    {
+      "dataset": "dentate",
+      "seed": 2,
+      "alpha": 1.0,
+      "unique_rows": 450,
+      "retained_self_indices": 0,
+      "equal_distances_at_k15_cutoff": 0,
+      "smallest_nonself_distance": 6.61379951415487e-05
+    }
+  ],
+  "exact_duplicate_stress": {
+    "n": 20,
+    "k": 5,
+    "retained_self_indices": 5,
+    "implementation": "Historical graph rule: NearestNeighbors(k+1).kneighbors(x)[:,1:]; reproduced directly here without modifying the scorer"
+  },
+  "sensitivity": "Exploratory range cutoffs 1e-10, 1e-8, 1e-6 leave all 12 classifications unchanged; original threshold remains primary.",
+  "limitation": "0/3 does not exclude collapse. Leave-one-seed-out rates are influence checks, not additional trials."
+}
