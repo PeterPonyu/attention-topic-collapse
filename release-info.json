@@ -1,6 +1,6 @@
 {
   "title": "Single-topic collapse in a within-cell attention topic model: an implementation and measurement case study",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/PeterPonyu/attention-topic-collapse",
   "archive_doi": "10.5281/zenodo.22914481",
   "archive_record": "https://zenodo.org/records/22914481",

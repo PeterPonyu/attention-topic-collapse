@@ -6,7 +6,7 @@
       "name": "Fu, Zeyu"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Matched computational experiments and numerical diagnostics of allocation collapse in a within-cell attention topic model. The archive contains the manuscript, vector figures, matched training and intervention records, saved allocation arrays, schedules, protocols and source snapshots. CPU commands reproduce collapse intervals and saved-result numerical diagnostics without training, source-expression snapshots or model checkpoints. Model checkpoints are supplied separately within this archive. Processed Setty and Dentate source-expression snapshots are not distributed because their exact upstream-version and annotation-transformation provenance has not been established for redistribution. Historical model-state probes and training additionally require separately and lawfully obtained, hash-matching expression inputs. Raw-data preprocessing, every historical training sweep and graph-score regeneration are outside the verified public reproduction scope.",
   "license": "other-open",
   "notes": "Mixed-license release: author-owned software MIT; author-owned manuscript, figures, generated results and weights CC BY 4.0; third-party original terms retained. See LICENSE and NOTICE.md.",

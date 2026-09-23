@@ -1,0 +1,116 @@
+{
+  "study": "attention-topic-collapse",
+  "version": "1.0.1",
+  "archive": {
+    "name": "attention-topic-collapse-1.0.1-checkpoints.zip",
+    "bytes": 306500083,
+    "sha256": "ffa9f056f81bc61776e4585cfab8bf89192cb2090d5e038a4a8f0f1879803adb"
+  },
+  "parts": [
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part001",
+      "bytes": 20971520,
+      "sha256": "ed0fe664e514e627c8020b2d2f089bcefd8b5dd1106b1c08f57362cfb20b7156",
+      "md5": "md5:3eab59238d43313a5a4e86bd27943caa",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part001?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part002",
+      "bytes": 20971520,
+      "sha256": "e8c4535d337393e57aa464eec694155526460458b46fc1a00a6ef679dbb09dd6",
+      "md5": "md5:b298c67c03f397f83aa67efdecd8fbf7",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part002?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part003",
+      "bytes": 20971520,
+      "sha256": "1b127f5e5e99b737c5ecd18c8a400f0a55d706e2cced375f2b60674c5e4385d3",
+      "md5": "md5:7e91b4c5878a6eb48d81fb72a7a94edb",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part003?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part004",
+      "bytes": 20971520,
+      "sha256": "e300a4b646dd4a27385118d625f0fa4b57769339ffbeefb38528ff8971d784bf",
+      "md5": "md5:629deacb8448e3e7542c25d92b153e22",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part004?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part005",
+      "bytes": 20971520,
+      "sha256": "e41707f6f0404d37995e3904f1cfafa7278fe4554fe4fc9b55a6085011d17b59",
+      "md5": "md5:67122715f1159a1f140cfb8ebc84b8e9",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part005?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part006",
+      "bytes": 20971520,
+      "sha256": "1ac1fb19fc75108e3be5f456e34f896856bfaf23938815fbfaef552158e4f21f",
+      "md5": "md5:a10b69ab748a1f235a8eae380d97aba5",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part006?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part007",
+      "bytes": 20971520,
+      "sha256": "e5bc8dbc27aba0a81692c95d0b73fd3798b9e384586a5048d125395cb2d4cf1e",
+      "md5": "md5:00dbf7e560d142d242820874a8f50e6b",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part007?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part008",
+      "bytes": 20971520,
+      "sha256": "0d848c9756beaf22c6489fca1c181fbadb9439dd7db49673603c6398ecd49874",
+      "md5": "md5:c34308a78519c5b36331e87413215f5e",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part008?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part009",
+      "bytes": 20971520,
+      "sha256": "82dc9267cf95b466d97414f0084de03beed68eac90da666b2efe2aa82ac09447",
+      "md5": "md5:cf1bd4c7ce7ebe7f651e5046bce4edf6",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part009?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part010",
+      "bytes": 20971520,
+      "sha256": "92b0fd9af388377f1582f839bf2207187b4852269a7421f2f036f95115727428",
+      "md5": "md5:d2c23f1edc64d1dbb15dd2859d70ba2e",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part010?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part011",
+      "bytes": 20971520,
+      "sha256": "2b0b826fe1b9b9d38f64a0417c6ecf375f0a1f8ee7ee7e27992ff304afa995ef",
+      "md5": "md5:7f5880e54dc1526e70339f686c7b1f3a",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part011?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part012",
+      "bytes": 20971520,
+      "sha256": "076d768a022091bebe57ae197e46066c23c9f1e76310fe9ec8028bbc99b38fb6",
+      "md5": "md5:49c1e4ddaeb21b751a69ee768697195d",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part012?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part013",
+      "bytes": 20971520,
+      "sha256": "17013583ea14fa92de132b9d330a19dce7eccfaddd8a9d69cd924cbd75918d43",
+      "md5": "md5:8ba333ad69199350e356f5878b34c9f9",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part013?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part014",
+      "bytes": 20971520,
+      "sha256": "0d3b87d320b5053c2d37ab95c9be95843ece01586bbf46e352113f17f51c7208",
+      "md5": "md5:4e01050e33b7fd91f7bd478681fb6033",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part014?download=1"
+    },
+    {
+      "name": "attention-topic-collapse-1.0.1-checkpoints.zip.part015",
+      "bytes": 12898803,
+      "sha256": "80f33256cb55ea5be4316e29ee0b2ee4767c668992f25b347a42379ba9002685",
+      "md5": "md5:1c072f955bd193c04d1ddd1ed77a961d",
+      "url": "https://zenodo.org/records/22914481/files/attention-topic-collapse-1.0.1-checkpoints.zip.part015?download=1"
+    }
+  ]
+}

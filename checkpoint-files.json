@@ -1,0 +1,102 @@
+{
+  "study": "attention-topic-collapse",
+  "release_version": "1.0.1",
+  "files": {
+    "evidence/reproduction/training/dentate_s0_a0.1/initial.pt": {
+      "sha256": "890bd42236fabfd314d932e282e4a675beda190c8a1f99320a5f959368610007",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/dentate_s0_a0.1/last.pt": {
+      "sha256": "aaf03369210512533b17e1071c8cfd5d125f3b311d77351f7a2220bcf6cd0095",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/dentate_s0_a1/initial.pt": {
+      "sha256": "0a8cacf24ddc30f693db4f042e40d032381e2b5681e4e67484e1d86d8f1cc00e",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/dentate_s0_a1/last.pt": {
+      "sha256": "5e2aa08ed0d2b888658d86e712bedad20b390e1aead363233a18f86edb45451d",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/dentate_s1_a0.1/initial.pt": {
+      "sha256": "d132c02b3d8881ad45b0e1ffc853aac29809159ee777f79d5051ccf07464f009",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/dentate_s1_a0.1/last.pt": {
+      "sha256": "8a571b387caaa7f3606c1d8fb47b03a34c57b53b2aa8a41d66956186cf00bf67",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/dentate_s1_a1/initial.pt": {
+      "sha256": "f8f1a55ea7c9e3dc5d29fbffef80298d0f475e0596400d131babc53af6d80d82",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/dentate_s1_a1/last.pt": {
+      "sha256": "251af7ffd1829eb3e881e71f109f6173a6ea3913111cfefa0ecdf596d7edab7c",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/dentate_s2_a0.1/initial.pt": {
+      "sha256": "659f7272104565671593db4f6ba90238297f5865ead2f70f8b8cdfe4627b9474",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/dentate_s2_a0.1/last.pt": {
+      "sha256": "549ce56a81c62fd096150a6fd8dd0cf0c585938de6e60aed2d91bbad6be3e3ad",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/dentate_s2_a1/initial.pt": {
+      "sha256": "1228bb9f86c9c553f8ef931e2edc024d308d164a9652fc108c15fc48e40e250f",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/dentate_s2_a1/last.pt": {
+      "sha256": "32c1fca43f5d1c51c9a215e917af73fb97227d666ab8cc11cc011db087e94978",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/setty_s0_a0.1/initial.pt": {
+      "sha256": "890bd42236fabfd314d932e282e4a675beda190c8a1f99320a5f959368610007",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/setty_s0_a0.1/last.pt": {
+      "sha256": "b2d08ce326d964f38aec178c730bfdd54e4635bfeaea5779b4dc83fb01b852fa",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/setty_s0_a1/initial.pt": {
+      "sha256": "0a8cacf24ddc30f693db4f042e40d032381e2b5681e4e67484e1d86d8f1cc00e",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/setty_s0_a1/last.pt": {
+      "sha256": "ad578b89bd9e1f51133e2949fd20b975a47aa801ecb8e328e80706930c8c4bac",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/setty_s1_a0.1/initial.pt": {
+      "sha256": "d132c02b3d8881ad45b0e1ffc853aac29809159ee777f79d5051ccf07464f009",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/setty_s1_a0.1/last.pt": {
+      "sha256": "7f64559062fe83aa44208dbc092f032c2cc1c8ac506e8c9eb48cbae279d61c1f",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/setty_s1_a1/initial.pt": {
+      "sha256": "f8f1a55ea7c9e3dc5d29fbffef80298d0f475e0596400d131babc53af6d80d82",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/setty_s1_a1/last.pt": {
+      "sha256": "93259c7811eb3b5e3a75d2d9dd5f7d6010fb1da17d97b512bbf0363d6866c2de",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/setty_s2_a0.1/initial.pt": {
+      "sha256": "659f7272104565671593db4f6ba90238297f5865ead2f70f8b8cdfe4627b9474",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/setty_s2_a0.1/last.pt": {
+      "sha256": "f8aeb358391f240219700af0e30f730898344a6e9ed8498f6f52479e3ccfd7d8",
+      "bytes": 13802843
+    },
+    "evidence/reproduction/training/setty_s2_a1/initial.pt": {
+      "sha256": "1228bb9f86c9c553f8ef931e2edc024d308d164a9652fc108c15fc48e40e250f",
+      "bytes": 13811080
+    },
+    "evidence/reproduction/training/setty_s2_a1/last.pt": {
+      "sha256": "26c7ee9b430c06babec68649843598c90fee1fe26ea6ebf429bcaa181c4e325d",
+      "bytes": 13802843
+    }
+  }
+}
